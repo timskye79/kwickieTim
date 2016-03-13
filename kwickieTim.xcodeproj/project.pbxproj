@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		520C15781C94E36300B1F887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C15771C94E36300B1F887 /* main.m */; };
 		520C157B1C94E36300B1F887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C157A1C94E36300B1F887 /* AppDelegate.m */; };
-		520C157E1C94E36300B1F887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C157D1C94E36300B1F887 /* ViewController.m */; };
-		520C15811C94E36300B1F887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C157F1C94E36300B1F887 /* Main.storyboard */; };
 		520C15831C94E36300B1F887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520C15821C94E36300B1F887 /* Assets.xcassets */; };
 		520C15861C94E36300B1F887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C15841C94E36300B1F887 /* LaunchScreen.storyboard */; };
 		520C15911C94E36300B1F887 /* kwickieTimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C15901C94E36300B1F887 /* kwickieTimTests.m */; };
 		520C159C1C94E36300B1F887 /* kwickieTimUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C159B1C94E36300B1F887 /* kwickieTimUITests.m */; };
+		520C15AB1C94E3E700B1F887 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C15AA1C94E3E700B1F887 /* RootViewController.m */; };
+		520C15B11C94E81100B1F887 /* KwickieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C15B01C94E81100B1F887 /* KwickieViewController.m */; };
+		520C15B71C950DEF00B1F887 /* KwickieTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 520C15B61C950DEF00B1F887 /* KwickieTableViewDataSource.m */; };
+		5237CBAC1C95178100D148DC /* myURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5237CBAB1C95178100D148DC /* myURLSession.m */; };
+		5237CBAF1C951A6600D148DC /* KwickieServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5237CBAE1C951A6600D148DC /* KwickieServer.m */; };
+		527989401C951E62008EAB0B /* KwickieJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279893F1C951E62008EAB0B /* KwickieJSON.m */; };
+		527989431C952199008EAB0B /* KwickieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527989421C952199008EAB0B /* KwickieController.m */; };
+		527989461C95452E008EAB0B /* KwickieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527989451C95452E008EAB0B /* KwickieTableViewCell.m */; };
+		527989491C956EB5008EAB0B /* PlayVideoStreamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 527989481C956EB5008EAB0B /* PlayVideoStreamVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +46,6 @@
 		520C15771C94E36300B1F887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		520C15791C94E36300B1F887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		520C157A1C94E36300B1F887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		520C157C1C94E36300B1F887 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		520C157D1C94E36300B1F887 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		520C15801C94E36300B1F887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		520C15821C94E36300B1F887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520C15851C94E36300B1F887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520C15871C94E36300B1F887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,24 @@
 		520C15971C94E36300B1F887 /* kwickieTimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kwickieTimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520C159B1C94E36300B1F887 /* kwickieTimUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kwickieTimUITests.m; sourceTree = "<group>"; };
 		520C159D1C94E36300B1F887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520C15A91C94E3E700B1F887 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		520C15AA1C94E3E700B1F887 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		520C15AF1C94E81100B1F887 /* KwickieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KwickieViewController.h; path = ../KwickieViewController.h; sourceTree = "<group>"; };
+		520C15B01C94E81100B1F887 /* KwickieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KwickieViewController.m; path = ../KwickieViewController.m; sourceTree = "<group>"; };
+		520C15B51C950DEF00B1F887 /* KwickieTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwickieTableViewDataSource.h; sourceTree = "<group>"; };
+		520C15B61C950DEF00B1F887 /* KwickieTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwickieTableViewDataSource.m; sourceTree = "<group>"; };
+		5237CBAA1C95178100D148DC /* myURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myURLSession.h; sourceTree = "<group>"; };
+		5237CBAB1C95178100D148DC /* myURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myURLSession.m; sourceTree = "<group>"; };
+		5237CBAD1C951A6600D148DC /* KwickieServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwickieServer.h; sourceTree = "<group>"; };
+		5237CBAE1C951A6600D148DC /* KwickieServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwickieServer.m; sourceTree = "<group>"; };
+		5279893E1C951E62008EAB0B /* KwickieJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwickieJSON.h; sourceTree = "<group>"; };
+		5279893F1C951E62008EAB0B /* KwickieJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwickieJSON.m; sourceTree = "<group>"; };
+		527989411C952199008EAB0B /* KwickieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwickieController.h; sourceTree = "<group>"; };
+		527989421C952199008EAB0B /* KwickieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwickieController.m; sourceTree = "<group>"; };
+		527989441C95452E008EAB0B /* KwickieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwickieTableViewCell.h; sourceTree = "<group>"; };
+		527989451C95452E008EAB0B /* KwickieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwickieTableViewCell.m; sourceTree = "<group>"; };
+		527989471C956EB5008EAB0B /* PlayVideoStreamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoStreamVC.h; sourceTree = "<group>"; };
+		527989481C956EB5008EAB0B /* PlayVideoStreamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoStreamVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +123,28 @@
 		520C15751C94E36300B1F887 /* kwickieTim */ = {
 			isa = PBXGroup;
 			children = (
+				527989471C956EB5008EAB0B /* PlayVideoStreamVC.h */,
+				527989481C956EB5008EAB0B /* PlayVideoStreamVC.m */,
+				5237CBAA1C95178100D148DC /* myURLSession.h */,
+				5237CBAB1C95178100D148DC /* myURLSession.m */,
+				5237CBAD1C951A6600D148DC /* KwickieServer.h */,
+				5237CBAE1C951A6600D148DC /* KwickieServer.m */,
+				5279893E1C951E62008EAB0B /* KwickieJSON.h */,
+				5279893F1C951E62008EAB0B /* KwickieJSON.m */,
+				527989441C95452E008EAB0B /* KwickieTableViewCell.h */,
+				527989451C95452E008EAB0B /* KwickieTableViewCell.m */,
+				520C15B51C950DEF00B1F887 /* KwickieTableViewDataSource.h */,
+				520C15B61C950DEF00B1F887 /* KwickieTableViewDataSource.m */,
+				520C15AF1C94E81100B1F887 /* KwickieViewController.h */,
+				520C15B01C94E81100B1F887 /* KwickieViewController.m */,
+				520C15A91C94E3E700B1F887 /* RootViewController.h */,
+				520C15AA1C94E3E700B1F887 /* RootViewController.m */,
 				520C15791C94E36300B1F887 /* AppDelegate.h */,
 				520C157A1C94E36300B1F887 /* AppDelegate.m */,
-				520C157C1C94E36300B1F887 /* ViewController.h */,
-				520C157D1C94E36300B1F887 /* ViewController.m */,
-				520C157F1C94E36300B1F887 /* Main.storyboard */,
-				520C15821C94E36300B1F887 /* Assets.xcassets */,
+				527989411C952199008EAB0B /* KwickieController.h */,
+				527989421C952199008EAB0B /* KwickieController.m */,
 				520C15841C94E36300B1F887 /* LaunchScreen.storyboard */,
+				520C15821C94E36300B1F887 /* Assets.xcassets */,
 				520C15871C94E36300B1F887 /* Info.plist */,
 				520C15761C94E36300B1F887 /* Supporting Files */,
 			);
@@ -245,7 +282,6 @@
 			files = (
 				520C15861C94E36300B1F887 /* LaunchScreen.storyboard in Resources */,
 				520C15831C94E36300B1F887 /* Assets.xcassets in Resources */,
-				520C15811C94E36300B1F887 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520C157E1C94E36300B1F887 /* ViewController.m in Sources */,
+				5237CBAF1C951A6600D148DC /* KwickieServer.m in Sources */,
+				527989431C952199008EAB0B /* KwickieController.m in Sources */,
+				520C15B11C94E81100B1F887 /* KwickieViewController.m in Sources */,
+				527989401C951E62008EAB0B /* KwickieJSON.m in Sources */,
+				527989491C956EB5008EAB0B /* PlayVideoStreamVC.m in Sources */,
 				520C157B1C94E36300B1F887 /* AppDelegate.m in Sources */,
+				5237CBAC1C95178100D148DC /* myURLSession.m in Sources */,
 				520C15781C94E36300B1F887 /* main.m in Sources */,
+				527989461C95452E008EAB0B /* KwickieTableViewCell.m in Sources */,
+				520C15B71C950DEF00B1F887 /* KwickieTableViewDataSource.m in Sources */,
+				520C15AB1C94E3E700B1F887 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		520C157F1C94E36300B1F887 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				520C15801C94E36300B1F887 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		520C15841C94E36300B1F887 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,6 +534,7 @@
 				520C15A21C94E36300B1F887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		520C15A31C94E36300B1F887 /* Build configuration list for PBXNativeTarget "kwickieTimTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +543,7 @@
 				520C15A51C94E36300B1F887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		520C15A61C94E36300B1F887 /* Build configuration list for PBXNativeTarget "kwickieTimUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +552,7 @@
 				520C15A81C94E36300B1F887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

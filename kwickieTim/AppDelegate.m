@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,11 +15,47 @@
 
 @implementation AppDelegate
 
+- (void) application:(UIApplication *)application willChangeStatusBarFrame:(CGRect)newStatusBarFrame
+{
+    //NSLog(@"%s",__PRETTY_FUNCTION__);
+    
+    self.currentStatusBarFrame = newStatusBarFrame;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"statusBarFrameChanged"
+                                                        object:self
+                                                      userInfo:@{@"currentStatusBarFrame": [NSValue valueWithCGRect:newStatusBarFrame]}];
+    
+}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (void) application:(UIApplication *)application didChangeStatusBarFrame:(CGRect)newStatusBarFrame
+{
+    //NSLog(@"%s",__PRETTY_FUNCTION__);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"statusBarFrameChangedFullScreenView"
+                                                        object:self
+                                                      userInfo:nil];
+    
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //NSLog(@"%s",__PRETTY_FUNCTION__);
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor blackColor];
+    self.RootVC = [[RootViewController alloc] init];
+    self.window.rootViewController = self.RootVC;
+    [self.window makeKeyAndVisible];
+    
+    
+    self.myKwickieProgramController = [[KwickieController alloc] init];
+    [self.myKwickieProgramController start];
+    
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
